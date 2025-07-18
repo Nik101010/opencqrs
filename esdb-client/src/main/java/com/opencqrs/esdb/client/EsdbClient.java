@@ -227,7 +227,7 @@ public final class EsdbClient implements AutoCloseable {
      * @see RowHandler
      * @see ErrorHandler
      */
-    public void query(String query, RowHandler rowHandler, ErrorHandler errorHandler) throws ClientException {
+    public void query(Query query, RowHandler rowHandler, ErrorHandler errorHandler) throws ClientException {
         var httpRequest = newJsonRequest("/api/v1/run-eventql-query")
                 .POST(HttpRequest.BodyPublishers.ofString(marshaller.toQueryRequest(query)))
                 .build();
