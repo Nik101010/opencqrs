@@ -20,6 +20,7 @@
 #            pkgs.python3Packages.mkdocs-autorefs
 #            pkgs.python3Packages.mkdocs-redirects
 #            pkgs.python3Packages.mkdocs-awesome-pages-plugin
+            pkgs.devcontainer
           ];
         };
       });
